@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ae7f0a5-3db7-4429-81bd-49ca2e28c821" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/jvm.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ProyectosPruebaTema2/.idea/ProyectosPruebaTema2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Empleado.java" afterDir="false" />
@@ -42,9 +35,14 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -64,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760614520437</updated>
-      <workItem from="1760614521713" duration="186000" />
+      <workItem from="1760614521713" duration="511000" />
     </task>
     <servers />
   </component>
