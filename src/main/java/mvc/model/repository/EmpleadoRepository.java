@@ -1,6 +1,6 @@
 package mvc.model.repository;
 
-import mvc.entity.Empleado;
+import mvc.model.entity.Empleado;
 import mvc.excepciones.RepositoryException;
 
 import java.sql.Connection;
@@ -36,8 +36,4 @@ public class EmpleadoRepository {
             throw new RepositoryException(ex.getMessage());
         }
     }
-
-
-
-
 }

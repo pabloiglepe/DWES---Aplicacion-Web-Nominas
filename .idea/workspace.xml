@@ -13,7 +13,12 @@
       <change afterPath="$PROJECT_DIR$/../ProyectosPruebaTema2/.idea/ProyectosPruebaTema2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/EmpleadoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/entity/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/entity/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/entity/Nomina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/entity/Nomina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/entity/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/entity/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/repository/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/repository/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/repository/EmpleadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/repository/EmpleadoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" afterDir="false" />
@@ -31,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -55,6 +61,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.empresa [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -188,7 +195,8 @@
       <option name="presentableId" value="Default" />
       <updated>1760614520437</updated>
       <workItem from="1760614521713" duration="596000" />
-      <workItem from="1760698457420" duration="6151000" />
+      <workItem from="1760698457420" duration="6442000" />
+      <workItem from="1761028014966" duration="6805000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package mvc.entity;
+package mvc.model.entity;
 
 public class Nomina {
 

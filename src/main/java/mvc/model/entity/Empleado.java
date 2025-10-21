@@ -1,4 +1,4 @@
-package mvc.entity;
+package mvc.model.entity;
 
 import mvc.excepciones.DatosNoCorrectosExcepcion;
 
