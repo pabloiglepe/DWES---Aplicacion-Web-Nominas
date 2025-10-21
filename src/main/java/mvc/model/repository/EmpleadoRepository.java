@@ -12,7 +12,7 @@ import java.util.List;
 
 public class EmpleadoRepository {
 
-    private static final String SELECT_ALL = "SELECT * FROM empleados";
+    private static final String SELECT_ALL = "SELECT * FROM empleado";
 
     public static List<Empleado> findAll() throws RepositoryException {
         try {

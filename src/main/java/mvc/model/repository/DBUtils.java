@@ -95,31 +95,52 @@ public class DBUtils {
 //        }
 //    }
 
-    private static final String URL = "jdbc:mysql://localhost:3306/empleadosnominas?useTimezone=true&serverTimezone=UTC";
-    private static final String USER = "root";
-    private static final String PASSWORD = "123456";
+//    private static final String URL = "jdbc:mysql://localhost:3306/empleadosnominas?useTimezone=true&serverTimezone=UTC";
+//    private static final String USER = "root";
+//    private static final String PASSWORD = "123456";
+//
+//    public static Connection getConnection() throws SQLException, RepositoryException {
+//        Connection conn = null;
+//        try {
+//            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+//
+//            if (conn != null) {
+//                System.out.println("Conexion exitosa");
+//            }
+//            return conn;
+//        } catch (SQLException e) {
+//            throw new RepositoryException(e.getMessage());
+//        } finally {
+//            if (conn != null) {
+//                try {
+//                    conn.close();
+//                    System.out.println("Conexión cerrada.");
+//                } catch (SQLException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }
+//    }
 
-    public static Connection getConnection() throws SQLException, RepositoryException {
-        Connection conn = null;
-        try {
-            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+    private static BasicDataSource dataSource = null;
 
-            if (conn != null) {
-                System.out.println("Conexion exitosa");
-            }
-            return conn;
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
-        } finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                    System.out.println("Conexión cerrada.");
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }
+    private static DataSource getDataSource() {
+        if (dataSource == null) {
+            dataSource = new BasicDataSource();
+            dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+            dataSource.setUsername("root");
+            dataSource.setPassword("123456");
+            dataSource.setUrl("jdbc:mysql://localhost:3306/empleadosnominas?useTimezone=true&serverTimezone=UTC");
+            dataSource.setInitialSize(20);
+            dataSource.setMaxIdle(15);
+            dataSource.setMaxTotal(20);
+            dataSource.setMaxWaitMillis(5000);
         }
+        return dataSource;
+    }
+
+    public static Connection getConnection() throws SQLException {
+        return getDataSource().getConnection();
     }
 
 
