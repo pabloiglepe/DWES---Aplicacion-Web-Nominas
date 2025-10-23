@@ -13,6 +13,7 @@ import java.util.List;
 public class EmpleadoRepository {
 
     private static final String SELECT_ALL = "SELECT * FROM empleado";
+    private static final String SELECT_BY_ID = "SELECT * FROM nomina WHERE Dni = ?";
 
     public static List<Empleado> findAll() throws RepositoryException {
         try {
@@ -33,6 +34,26 @@ public class EmpleadoRepository {
 
             return empleados;
         } catch (SQLException ex) {
+            throw new RepositoryException(ex.getMessage());
+        }
+    }
+
+
+    public static Double mostrarSalarioPorDni(String dni) throws RepositoryException {
+        try {
+            Connection conn = DBUtils.getConnection();
+            Double res = 0.0;
+
+            PreparedStatement stmt = conn.prepareStatement(SELECT_BY_ID);
+            stmt.setString(1, dni);
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                res = rs.getDouble("sueldo");
+            }
+            return res;
+
+        } catch(SQLException ex) {
             throw new RepositoryException(ex.getMessage());
         }
     }

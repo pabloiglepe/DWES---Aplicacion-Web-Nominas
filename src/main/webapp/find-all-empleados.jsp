@@ -6,7 +6,7 @@
     <div class="container">
         <div class="main-content">
             <h1>Estos son todos los empleados de la BBDD</h1>
-            <table>
+            <table border="1px">
                 <thead>
                 <tr>
                     <th>DNI</th>

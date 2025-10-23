@@ -35,11 +35,16 @@ public class EmpleadoController extends HttpServlet {
                 case "findAllEmpleados":
                     findAllEmpleados(request, response);
                     break;
+
+                case "mostrarSalario":
+                    mostrarSalarioPorDni(request, response);
+                    break;
+
                 default:
                     request.setAttribute("error", "Opción de controlador no reconocida: " + opcion);
                     rd = request.getRequestDispatcher("error.jsp");
                     rd.forward(request, response);
-                    break;
+                    break;q
             }
         }
     }
@@ -57,6 +62,26 @@ public class EmpleadoController extends HttpServlet {
             request.setAttribute("listaEmpleados", empleados);
             RequestDispatcher rd = request.getRequestDispatcher("find-all-empleados.jsp");
             rd.forward(request, response);
+        } catch (RepositoryException e) {
+            e.printStackTrace();
+            request.setAttribute("error", "Se produjo un error al acceder al repositorio de datos");
+            RequestDispatcher rd = request.getRequestDispatcher("error.jsp");
+            rd.forward(request, response);
+        }
+    }
+
+    private void mostrarSalarioPorDni(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Double sueldo;
+        try {
+            String dni = request.getParameter("dniEmpleado");
+            sueldo = EmpleadoService.mostrarSalarioPorDni(dni);
+
+            if (sueldo != null) {
+                request.setAttribute("salario", sueldo);
+                RequestDispatcher rd = request.getRequestDispatcher("mostrar-salario.jsp");
+                rd.forward(request, response);
+            }
+
         } catch (RepositoryException e) {
             e.printStackTrace();
             request.setAttribute("error", "Se produjo un error al acceder al repositorio de datos");

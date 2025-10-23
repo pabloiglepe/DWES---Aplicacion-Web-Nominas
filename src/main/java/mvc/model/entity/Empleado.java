@@ -34,18 +34,26 @@ public class Empleado extends Persona {
         this.categoria = categoria;
     }
 
+    public void incrAnyo() {
+        this.anyos++;
+    }
+
+//    GETTERS
+    public String getDni() {return dni;}
+
     public int getCategoria() {
         return categoria;
     }
 
-    // IMPLEMENTO EL GETANYOS PARA LA FUNCION SUELDO DE EMPLEADOS
     public int getAnyos() {
         return anyos;
     }
 
-    public void incrAnyo() {
-        this.anyos++;
-    }
+    public String getNombre() {return nombre;}
+
+    public char getSexo() {return sexo;}
+
+
 
 
     public String Imprime() {
