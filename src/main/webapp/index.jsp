@@ -4,6 +4,8 @@
 
 <html>
 
+<%@ include file="header.jsp"%>
+
 <body>
 
 <h2> MENÚ CON OPCIONES </h2>
@@ -13,7 +15,6 @@
     <li><a href="EmpleadoController?opcion=mostrarSalario">Salario de un empleado</a></li>
     <li><a href="#">Modifica los datos de un empleado</a></li>
 </ul>
-
 </body>
 
 </html>

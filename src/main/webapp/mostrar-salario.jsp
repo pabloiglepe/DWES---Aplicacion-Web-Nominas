@@ -18,8 +18,9 @@
                     El salario es de <c:out value="${salario}"/> euros
                 </div>
             </c:if>
-
         </div>
     </div>
 </div>
+
+<%@ include file="footer.jsp" %>
 

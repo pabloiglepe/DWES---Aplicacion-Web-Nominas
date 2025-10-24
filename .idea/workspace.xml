@@ -12,13 +12,13 @@
     <list default="true" id="8ae7f0a5-3db7-4429-81bd-49ca2e28c821" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../ProyectosPruebaTema2/.idea/ProyectosPruebaTema2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/entity/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/entity/Empleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/repository/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/repository/DBUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/repository/EmpleadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/repository/EmpleadoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/service/EmpleadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/service/EmpleadoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/find-all-empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/find-all-empleados.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mostrar-salario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mostrar-salario.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Empleado.java" afterDir="false" />
@@ -35,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -68,14 +69,23 @@
     "Tomcat Server.Tomcat 9.0.11.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.22643678",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\usuario_\Desktop\DWES\AppWebNominas\src\main\webapp\styles" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationStatuses">
       <map>
@@ -95,7 +105,7 @@
       <deployment>
         <artifact name="AppWebNominas:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/AppWebNominas_war_exploded" />
+            <option name="CONTEXT_PATH" value="/empresa" />
           </settings>
         </artifact>
       </deployment>
@@ -198,7 +208,8 @@
       <workItem from="1761028014966" duration="6870000" />
       <workItem from="1761035179701" duration="81000" />
       <workItem from="1761035475088" duration="1106000" />
-      <workItem from="1761207177890" duration="9859000" />
+      <workItem from="1761207177890" duration="10728000" />
+      <workItem from="1761303187827" duration="5603000" />
     </task>
     <servers />
   </component>

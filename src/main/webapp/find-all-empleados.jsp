@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<%@ include file="header.jsp"%>
 
 <div class="main-container">
     <div class="container">
         <div class="main-content">
             <h1>Estos son todos los empleados de la BBDD</h1>
-            <table border="1px">
+            <table class="tabla">
                 <thead>
                 <tr>
                     <th>DNI</th>
@@ -35,3 +36,5 @@
         </div>
     </div>
 </div>
+
+<%@ include file="footer.jsp" %>

@@ -44,7 +44,7 @@ public class EmpleadoController extends HttpServlet {
                     request.setAttribute("error", "Opción de controlador no reconocida: " + opcion);
                     rd = request.getRequestDispatcher("error.jsp");
                     rd.forward(request, response);
-                    break;q
+                    break;
             }
         }
     }
@@ -53,7 +53,6 @@ public class EmpleadoController extends HttpServlet {
             throws ServletException, IOException {
         doGet(request, response);
     }
-
 
     private void findAllEmpleados(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Empleado> empleados;
