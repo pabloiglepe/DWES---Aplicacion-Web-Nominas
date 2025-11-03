@@ -1,6 +1,5 @@
 package mvc.model.repository;
 
-import mvc.excepciones.RepositoryException;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 import javax.sql.DataSource;

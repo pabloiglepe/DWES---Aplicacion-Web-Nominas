@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="AppWebNominas:war exploded" />
+      <artifact name="empresa:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,14 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ae7f0a5-3db7-4429-81bd-49ca2e28c821" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProyectosPruebaTema2/.idea/ProyectosPruebaTema2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mostrar-salario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mostrar-salario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prueba Servidor" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/CalculaNominas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Nomina.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Nomina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Laboral/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Prueba Servidor - Entrega 2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/repository/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/repository/DBUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +55,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Tomcat Server.Tomcat 9.0.11.executor": "Run",
+    "Tomcat Server.Tomcat 9.0.111.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "list.type.of.created.stylesheet": "CSS",
@@ -85,7 +81,7 @@
         <entry key="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
           <value>
             <map>
-              <entry key="Tomcat 9.0.11" value="STOPPED" />
+              <entry key="Tomcat 9.0.111" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -93,12 +89,12 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.11" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.111" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.111" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="AppWebNominas:war exploded">
+        <artifact name="empresa:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/empresa" />
+            <option name="CONTEXT_PATH" value="/empresa_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -177,6 +173,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="AppWebNominas:war exploded" />
+          <artifact name="empresa:war exploded" />
         </option>
       </method>
     </configuration>
