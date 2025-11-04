@@ -14,13 +14,7 @@ public class EmpleadoRepository {
 
     private static final String SELECT_ALL = "SELECT * FROM empleado";
     private static final String SELECT_BY_ID = "SELECT * FROM nomina WHERE Dni = ?";
-//    private static final String SELECT_BY_ALL = "SELECT * " +
-//            "WHERE (? IS NULL OR Dni = ?) " +
-//            "AND (? IS NULL OR Nombre = ?) " +
-//            "AND (? IS NULL OR Categoria = ?) ";
-
-    private static final String SELECT_BY_ALL = "SELECT * FROM empleado " +
-            "WHERE Dni = ? OR Nombre = ? OR Categoria = ?";
+    private static final String SELECT_BY_ALL = "SELECT * FROM empleado WHERE Dni = ? OR nombre = ? OR Categoria = ? OR Sexo = ? OR Anyos = ?";
 
     public static List<Empleado> findAll() throws RepositoryException {
         try {
@@ -65,24 +59,27 @@ public class EmpleadoRepository {
         }
     }
 
-    private static List<Empleado> buscarEmpleadosParaModificar(String dni, String nombre, Integer categoria) throws RepositoryException {
+    public static List<Empleado> buscarEmpleadosParaModificar(String dni, String nombre, Integer categoria, Character sexo, Integer anyos) throws RepositoryException {
         try {
             Connection conn = DBUtils.getConnection();
             List<Empleado> empleados = new ArrayList<>();
 
             PreparedStatement stmt = conn.prepareStatement(SELECT_BY_ALL);
 
-            if (dni != null) {
-                stmt.setString(1, dni);
-            }
+            String dniParam = (dni != null && !dni.trim().isEmpty()) ? dni : "IMPOSSIBLE_DNI_MATCH";
+            stmt.setString(1, dniParam);
 
-            if (nombre != null) {
-                stmt.setString(2, nombre);
-            }
+            String nombreParam = (nombre != null && !nombre.trim().isEmpty()) ? nombre : "IMPOSSIBLE_NAME_MATCH";
+            stmt.setString(2, nombreParam);
 
-            if (categoria != 0) {
-                stmt.setInt(3, categoria);
-            }
+            Integer categoriaParam = (categoria != null && categoria > 0) ? categoria : -1;
+            stmt.setInt(3, categoriaParam);
+
+            String sexoParam = (sexo != null) ? String.valueOf(sexo) : "Z"; // Asumiendo que Sexo es M o F
+            stmt.setString(4, sexoParam);
+
+            Integer anyosParam = (anyos != null && anyos > 0) ? anyos : -1;
+            stmt.setInt(5, anyosParam);
 
             ResultSet rs = stmt.executeQuery();
 

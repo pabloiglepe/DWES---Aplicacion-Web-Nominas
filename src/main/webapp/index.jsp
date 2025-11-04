@@ -13,7 +13,7 @@
 <ul>
     <li><a href="EmpleadoController?opcion=findAllEmpleados">Todos los empleados</a></li>
     <li><a href="EmpleadoController?opcion=mostrarSalario">Salario de un empleado</a></li>
-    <li><a href="#">Modifica los datos de un empleado</a></li>
+    <li><a href="EmpleadoController?opcion=busquedaEmpleado">Modifica los datos de un empleado</a></li>
 </ul>
 </body>
 

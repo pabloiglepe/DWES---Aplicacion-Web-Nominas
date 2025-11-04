@@ -15,4 +15,8 @@ public class EmpleadoService {
     public static Double mostrarSalarioPorDni(String dni) throws RepositoryException {
         return EmpleadoRepository.mostrarSalarioPorDni(dni);
     }
+
+    public static List<Empleado> buscarEmpleadosParaModificar(String dni, String nombre, Integer categoria, Character sexo, Integer anyos) throws RepositoryException {
+        return EmpleadoRepository.buscarEmpleadosParaModificar(dni, nombre, categoria, sexo, anyos);
+    }
 }

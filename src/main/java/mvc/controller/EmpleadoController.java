@@ -40,6 +40,10 @@ public class EmpleadoController extends HttpServlet {
                     mostrarSalarioPorDni(request, response);
                     break;
 
+                case "busquedaEmpleado":
+                    buscarEmpleadosParaModificar(request, response);
+                    break;
+
                 default:
                     request.setAttribute("error", "Opción de controlador no reconocida: " + opcion);
                     rd = request.getRequestDispatcher("error.jsp");
@@ -89,4 +93,45 @@ public class EmpleadoController extends HttpServlet {
         }
     }
 
+    private void buscarEmpleadosParaModificar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<Empleado> listaEmpleados;
+        try {
+            String dni = request.getParameter("dniBuscarEmpleado");
+            String nombre = request.getParameter("nombreBuscarEmpleado");
+
+            String categoria = request.getParameter("categoriaBuscarEmpleado");
+            Integer catgInteger = null;
+
+            String sexo = request.getParameter("sexoBuscarEmpleado");
+            Character sexoChar = null;
+
+            String anyos = request.getParameter("anyosBuscarEmpleado");
+            Integer anyosInteger = null;
+
+            if (categoria != null && !categoria.trim().isEmpty()) {
+                catgInteger = Integer.valueOf(categoria);
+            }
+
+            if (anyos != null && !anyos.trim().isEmpty()) {
+                anyosInteger = Integer.valueOf(anyos);
+            }
+
+            if (sexo != null && !sexo.trim().isEmpty()) {
+                sexoChar = sexo.toCharArray()[0];
+            }
+
+            listaEmpleados = EmpleadoService.buscarEmpleadosParaModificar(dni, nombre, catgInteger, sexoChar, anyosInteger);
+
+            request.setAttribute("busquedaEmpleado", listaEmpleados);
+            RequestDispatcher rd = request.getRequestDispatcher("buscar_empleado.jsp");
+            rd.forward(request, response);
+
+        } catch (RepositoryException e) {
+            e.printStackTrace();
+            request.setAttribute("error", "Se produjo un error al acceder al repositorio de datos");
+            RequestDispatcher rd = request.getRequestDispatcher("error.jsp");
+            rd.forward(request, response);
+        }
+
+    }
 }
