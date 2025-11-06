@@ -27,7 +27,6 @@ import java.util.List;
 public class EmpleadoController extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-
     public EmpleadoController() {
     }
 

@@ -10,12 +10,12 @@ import java.util.List;
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  * SERVICE LAYER:
  * Define un conjunto de servicios disponibles desde la capa de la aplicación y aisla la lógica del negocio.
- * Actúa como intermediario central entre el controlador y el repository.
+ * Actúa como intermediario central entre el EmpleadoController y el EmpleadoRepository.
  *
  *
  * FACADE:
  * Proporciona una clase que simplifica el uso del subsistema por parte del cliente. Sirve como fachada para la clase EmpleadoRepository.
- * Simplifica el acceso a las operaciones del repositorio.
+ * Simplifica el acceso a las operaciones del EmpleadoRepository.
  * Todos los métodos de EmpleadoService son métodos estáticos que delegan la llamada al metodo que se encuentra en EmpleadoRepsository.
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  * */
