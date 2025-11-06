@@ -16,7 +16,7 @@ import java.util.List;
 
 /*
 * -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* FRONTCONTROLLER:
+* FRONT CONTROLLER:
 * Proporciona un único punto de entrada que maneja las peticiones para todas las solicitudes que llegan a la aplicación.
 * Centraliza la lógica de control y el flujo de las peticiones y permite gestionar de forma unificada las tareas.
 * -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
