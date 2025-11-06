@@ -4,7 +4,7 @@
 <%@ include file="header.jsp" %>
 
 <div class="container">
-    <h2>BUSCA EMLEADOS POR CAMPO</h2>
+    <h2>BUSCA EMPLEADOS POR CAMPO</h2>
     <form action="EmpleadoController?opcion=busquedaEmpleado" method="POST">
 
         <label for="dniBuscarEmpleado">DNI: </label>
@@ -14,14 +14,13 @@
         <input type="text" id="nombreBuscarEmpleado" name="nombreBuscarEmpleado" placeholder="Pablo">
 
         <label for="categoriaBuscarEmpleado">Categoria: </label>
-        <input type="number" id="categoriaBuscarEmpleado" name="categoriaBuscarEmpleado" placeholder="1-5">
+        <input type="number" id="categoriaBuscarEmpleado" name="categoriaBuscarEmpleado" placeholder="1-9">
 
         <label for="sexoBuscarEmpleado">Sexo: </label>
         <input type="text" id="sexoBuscarEmpleado" name="sexoBuscarEmpleado" placeholder="M/F">
 
-        <label for="anyosBuscarEmpleado">Anyos: </label>
+        <label for="anyosBuscarEmpleado">Años: </label>
         <input type="number" id="anyosBuscarEmpleado" name="anyosBuscarEmpleado" placeholder="50">
-
 
         <button type="submit">Buscar Empleados</button>
     </form>
@@ -52,6 +51,9 @@
         </table>
     </c:if>
 </div>
+
+<%@ include file="footer.jsp" %>
+
 
 
 

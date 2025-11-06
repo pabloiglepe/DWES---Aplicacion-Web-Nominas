@@ -14,6 +14,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/*
+* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* FRONTCONTROLLER:
+* Proporciona un único punto de entrada que maneja las peticiones para todas las solicitudes que llegan a la aplicación.
+* Centraliza la lógica de control y el flujo de las peticiones y permite gestionar de forma unificada las tareas.
+* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* */
+
+
 @WebServlet("/EmpleadoController")
 public class EmpleadoController extends HttpServlet {
     private static final long serialVersionUID = 1L;

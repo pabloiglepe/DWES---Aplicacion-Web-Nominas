@@ -10,6 +10,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * DAO:
+ * Se encarga de definir y gestionar el modo en que los objetos pueden ser guardados y recuperados de forma permanente (persisten).
+ * Sus métodos gestionan la conexión y ejecución de SQL para obtener objetos Empleado de la base de datos.
+ * Para ello el patrón de diseño agrupa todas las operaciones en una única clase que las gestiona.
+ * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ * */
+
 public class EmpleadoRepository {
 
     private static final String SELECT_ALL = "SELECT * FROM empleado";
@@ -38,7 +47,6 @@ public class EmpleadoRepository {
             throw new RepositoryException(ex.getMessage());
         }
     }
-
 
     public static Double mostrarSalarioPorDni(String dni) throws RepositoryException {
         try {
@@ -98,6 +106,5 @@ public class EmpleadoRepository {
             throw new RepositoryException(ex.getMessage());
         }
     }
-
 
 }
