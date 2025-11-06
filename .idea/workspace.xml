@@ -12,7 +12,6 @@
     <list default="true" id="8ae7f0a5-3db7-4429-81bd-49ca2e28c821" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mvc/controller/EmpleadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/controller/EmpleadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mvc/model/service/EmpleadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mvc/model/service/EmpleadoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +204,7 @@
       <workItem from="1762196892132" duration="192000" />
       <workItem from="1762202414012" duration="1014000" />
       <workItem from="1762205239883" duration="1323000" />
-      <workItem from="1762421341896" duration="8879000" />
+      <workItem from="1762421341896" duration="9791000" />
     </task>
     <servers />
   </component>
