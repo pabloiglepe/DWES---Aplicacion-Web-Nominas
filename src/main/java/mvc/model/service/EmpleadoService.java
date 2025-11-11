@@ -16,7 +16,7 @@ import java.util.List;
  * FACADE:
  * Proporciona una clase que simplifica el uso del subsistema por parte del cliente. Sirve como fachada para la clase EmpleadoRepository.
  * Simplifica el acceso a las operaciones del EmpleadoRepository.
- * Todos los métodos de EmpleadoService son métodos estáticos que delegan la llamada al metodo que se encuentra en EmpleadoRepsository.
+ * Todos los métodos de EmpleadoService son métodos estáticos que delegan la llamada al metodo que se encuentra en EmpleadoRepository.
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  * */
 
