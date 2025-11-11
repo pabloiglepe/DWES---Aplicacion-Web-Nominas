@@ -23,14 +23,35 @@ import java.util.List;
 
 public class EmpleadoService {
 
+    /**
+     *
+     * @return
+     * @throws RepositoryException
+     */
     public static List<Empleado> findAll() throws RepositoryException {
         return EmpleadoRepository.findAll();
     }
 
+    /**
+     *
+     * @param dni
+     * @return
+     * @throws RepositoryException
+     */
     public static Double mostrarSalarioPorDni(String dni) throws RepositoryException {
         return EmpleadoRepository.mostrarSalarioPorDni(dni);
     }
 
+    /**
+     *
+     * @param dni
+     * @param nombre
+     * @param categoria
+     * @param sexo
+     * @param anyos
+     * @return
+     * @throws RepositoryException
+     */
     public static List<Empleado> buscarEmpleadosParaModificar(String dni, String nombre, Integer categoria, Character sexo, Integer anyos) throws RepositoryException {
         return EmpleadoRepository.buscarEmpleadosParaModificar(dni, nombre, categoria, sexo, anyos);
     }

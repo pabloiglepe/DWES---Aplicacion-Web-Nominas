@@ -30,6 +30,13 @@ public class EmpleadoController extends HttpServlet {
     public EmpleadoController() {
     }
 
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String opcion = request.getParameter("opcion");
         RequestDispatcher rd = null;
@@ -61,11 +68,25 @@ public class EmpleadoController extends HttpServlet {
         }
     }
 
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doGet(request, response);
     }
 
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     private void findAllEmpleados(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Empleado> empleados;
         try {
@@ -81,6 +102,13 @@ public class EmpleadoController extends HttpServlet {
         }
     }
 
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     private void mostrarSalarioPorDni(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Double sueldo;
         try {
@@ -101,6 +129,13 @@ public class EmpleadoController extends HttpServlet {
         }
     }
 
+    /**
+     * 
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     private void buscarEmpleadosParaModificar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Empleado> listaEmpleados;
         try {

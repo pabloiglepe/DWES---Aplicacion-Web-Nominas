@@ -25,6 +25,11 @@ public class EmpleadoRepository {
     private static final String SELECT_BY_ID = "SELECT * FROM nomina WHERE Dni = ?";
     private static final String SELECT_BY_ALL = "SELECT * FROM empleado WHERE Dni = ? OR nombre = ? OR Categoria = ? OR Sexo = ? OR Anyos = ?";
 
+    /**
+     *
+     * @return
+     * @throws RepositoryException
+     */
     public static List<Empleado> findAll() throws RepositoryException {
         try {
             Connection conn = DBUtils.getConnection();
@@ -48,6 +53,12 @@ public class EmpleadoRepository {
         }
     }
 
+    /**
+     *
+     * @param dni
+     * @return
+     * @throws RepositoryException
+     */
     public static Double mostrarSalarioPorDni(String dni) throws RepositoryException {
         try {
             Connection conn = DBUtils.getConnection();
@@ -67,6 +78,16 @@ public class EmpleadoRepository {
         }
     }
 
+    /**
+     *
+     * @param dni
+     * @param nombre
+     * @param categoria
+     * @param sexo
+     * @param anyos
+     * @return
+     * @throws RepositoryException
+     */
     public static List<Empleado> buscarEmpleadosParaModificar(String dni, String nombre, Integer categoria, Character sexo, Integer anyos) throws RepositoryException {
         try {
             Connection conn = DBUtils.getConnection();

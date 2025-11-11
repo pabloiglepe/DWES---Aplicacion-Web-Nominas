@@ -4,11 +4,18 @@ import mvc.excepciones.DatosNoCorrectosExcepcion;
 
 public class Empleado extends Persona {
 
-    // ATRIBUTOS
+
     private int categoria;
     public int anyos;
 
-    // CONSTRUCTORES
+    /**
+     *
+     * @param sexo
+     * @param dni
+     * @param nombre
+     * @param anyos
+     * @param categoria
+     */
     public Empleado(char sexo, String dni, String nombre, int anyos, int categoria) {
         super(nombre, dni, sexo);
 
@@ -23,22 +30,37 @@ public class Empleado extends Persona {
         }
     }
 
+    /**
+     *
+     * @param sexo
+     * @param dni
+     * @param nombre
+     */
     public Empleado(char sexo, String dni, String nombre) {
         super(nombre, dni, sexo);
         this.anyos = 0;
         this.categoria = 1;
     }
 
-    // METODOS
+
+    /**
+     *
+     * @param categoria
+     */
     public void setCategoria(int categoria) {
         this.categoria = categoria;
     }
+
 
     public void incrAnyo() {
         this.anyos++;
     }
 
-//    GETTERS
+
+    /**
+     *
+     * @return
+     */
     public String getDni() {return dni;}
 
     public int getCategoria() {
@@ -52,8 +74,6 @@ public class Empleado extends Persona {
     public String getNombre() {return nombre;}
 
     public char getSexo() {return sexo;}
-
-
 
 
     public String Imprime() {
